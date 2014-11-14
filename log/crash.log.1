@@ -1,0 +1,31 @@
+2014-11-13 20:04:42 =ERROR REPORT====
+GET /pages/create [weibao_wiki] 404 0ms2014-11-13 20:12:53 =ERROR REPORT====
+GET /view/page-1 [weibao_wiki] 404 0ms2014-11-13 20:14:55 =ERROR REPORT====
+GET /view/page-1 [weibao_wiki] 404 0ms2014-11-13 21:20:53 =ERROR REPORT====
+** Generic server <0.104.0> terminating 
+** Last message in was {delete,page}
+** When Server state == {state,connected,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_database,"weibao_wiki"},{db_password,"epimap.123456"},{db_username,"epimap"},{db_host,"115.28.64.72"},{db_port,3306}],boss_db_adapter_mock,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
+** Reason for termination == 
+** {function_clause,[{boss_db_controller,infer_type_from_id,[page],[{file,"src/boss_db_controller.erl"},{line,418}]},{boss_db_controller,db_for_key,2,[{file,"src/boss_db_controller.erl"},{line,405}]},{boss_db_controller,handle_call,3,[{file,"src/boss_db_controller.erl"},{line,153}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2014-11-13 21:20:53 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_controller:init/1
+    pid: <0.104.0>
+    registered_name: []
+    exception exit: {{function_clause,[{boss_db_controller,infer_type_from_id,[page],[{file,"src/boss_db_controller.erl"},{line,418}]},{boss_db_controller,db_for_key,2,[{file,"src/boss_db_controller.erl"},{line,405}]},{boss_db_controller,handle_call,3,[{file,"src/boss_db_controller.erl"},{line,153}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.99.0>,boss_db_pool,boss_db_sup,boss_web,boss_sup,<0.92.0>]
+    messages: []
+    links: [<0.99.0>,<0.98.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 57398
+  neighbours:
+2014-11-13 21:20:53 =SUPERVISOR REPORT====
+     Supervisor: {<0.99.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{boss_db_controller,infer_type_from_id,[page],[{file,"src/boss_db_controller.erl"},{line,418}]},{boss_db_controller,db_for_key,2,[{file,"src/boss_db_controller.erl"},{line,405}]},{boss_db_controller,handle_call,3,[{file,"src/boss_db_controller.erl"},{line,153}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.104.0>},{name,boss_db_controller},{mfargs,{boss_db_controller,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+

@@ -1,0 +1,33 @@
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <head>
+
+    </head>
+    <body>
+	<a href="/hellos/world">Home</a>
+	<a href="/hellos/clear">Clear</a>
+	
+	<div id="name" style="float:right;width:600px;left:200px;word-wrap:break-word; break-word:break-all">
+		{% if event %}
+			{% for k, v in event.data %}
+			{% if k == "Unique-ID" or k == "variable_uuid" or k == "Application" or k == "Channel-State" %}
+				<span style="color:red">
+			{% else %}
+				<span>
+			{% endif %}
+					{{k}}: {{v}}</span><br>
+			{% endfor %}
+		{% endif %}
+	</div>
+	<ul>
+	{% for event in events %}
+    	<li>
+			<a href="/hellos/events/{{event.id}}">{{event.event_name}}</a>
+			{% if event.event_name == "CUSTOM" %}
+				{{event.subclass}} |
+			{% endif %}
+			{{event.uuid}}
+		</li>
+	{% endfor %}
+	</body>
+</html>

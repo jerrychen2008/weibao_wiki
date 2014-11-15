@@ -90,3 +90,15 @@ cb_admin 与你的 cb project 都在一个目录下
 have fun
 
 感谢 seven du 的卓越工作以及不厌其烦的指导！
+
+upgrade:2014/11/15
+
+1: 将 freeswith_events 在启动 cb project ./init.sh 的时候 自动注册  ；
+erl -s freeswich_events -s xxx
+erl 将调用 freeswitch_events:start() xxx:start()
+然后将freeswitch_events:init([]). 放在 freeswitch_events:start()中执行
+
+2：针对 无法获取事件的Event-Name的问题，原因是 erlang_event.conf 中配置了
+  <!--<param name="encoding" value="string"/>-->
+    <param name="encoding" value="binary”/>
+原先是string 方式

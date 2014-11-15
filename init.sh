@@ -13,7 +13,7 @@
 do_start () {
     if test $(echo "$1"|grep "^exec erl"> /dev/null;echo $?) -eq 0
     then
-        eval "$1"
+        eval "$1 -s freeswitch_events"
     else
         echo "$1"
     fi

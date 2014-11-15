@@ -1,0 +1,69 @@
+2014-11-15 08:48:07.918 [info] <0.7.0> Application lager started on node fs_eventcool@localhost
+2014-11-15 08:48:07.926 [info] <0.7.0> Application crypto started on node fs_eventcool@localhost
+2014-11-15 08:48:07.941 [info] <0.7.0> Application mimetypes started on node fs_eventcool@localhost
+2014-11-15 08:48:07.991 [info] <0.94.0> Starting Boss in development mode....
+
+2014-11-15 08:48:08.003 [info] <0.94.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_database,"weibao_wiki"},{db_password,"epimap.123456"},{db_username,"epimap"},{db_host,"115.28.64.72"},{db_port,3306}]
+2014-11-15 08:48:08.067 [info] <0.94.0> Starting master services on fs_eventcool@localhost
+
+2014-11-15 08:48:08.090 [info] <0.7.0> Application tinymq started on node fs_eventcool@localhost
+2014-11-15 08:48:08.093 [notice] <0.62.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2014-11-15 08:48:08.146 [info] <0.94.0> SSL:[]
+
+2014-11-15 08:48:08.150 [info] <0.94.0> Starting cowboy... on fs_eventcool@localhost
+
+2014-11-15 08:48:08.155 [info] <0.7.0> Application cowlib started on node fs_eventcool@localhost
+2014-11-15 08:48:08.161 [info] <0.7.0> Application ranch started on node fs_eventcool@localhost
+2014-11-15 08:48:08.178 [info] <0.7.0> Application cowboy started on node fs_eventcool@localhost
+2014-11-15 08:48:08.178 [info] <0.94.0> Starting http listener... on 0.0.0.0:8001 
+
+2014-11-15 08:48:08.272 [info] <0.94.0>@boss_load:load_all_modules:57 Loading application weibao_wiki
+2014-11-15 08:48:08.279 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/lib/freeswitch.erl" with options [{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 08:48:08.345 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/lib/freeswitch_events.erl" with options [{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 08:48:08.383 [info] <0.94.0>@boss_controller_compiler:compile:59 Compile controller /usr/local/src/weibao_wiki/src/controller/weibao_wiki_hellos_controller.erl
+2014-11-15 08:48:08.383 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/controller/weibao_wiki_hellos_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 08:48:08.426 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 08:48:08.427 [info] <0.94.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{atom,{4,1},validation_tests},{'(',{4,17}},{')',{4,18}},{'->',{4,20}},{'[',{5,5}},{'{',{5,6}},{fun,{5,7}},{'(',{5,10}},{')',{5,11}},{'->',{5,13}},{atom,{5,16},length},{'(',{5,22}},{var,{5,23},'GreetingText'},{')',{5,35}},{'>=',{5,37}},{integer,{5,40},4},{end,{5,42}},{',',{5,45}},{string,{6,13},"Greeting must be at least 4 characters long!"},{'}',{7,9}},{']',{7,10}},{dot,{7,11}},{eof,{9,1}}]
+2014-11-15 08:48:08.427 [notice] <0.94.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2014-11-15 08:48:08.469 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/model/fs_event.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 08:48:08.471 [info] <0.94.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},fs_event},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'EventName'},{',',{1,33}},{var,{1,35},'Subclass'},{',',{1,43}},{var,{1,45},'Uuid'},{',',{1,49}},{var,{1,51},'CreationTime'},{',',{1,63}},{var,{1,65},'Data'},{']',{1,69}},{')',{1,70}},{dot,{1,71}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{4,1}}]
+2014-11-15 08:48:08.482 [notice] <0.94.0>@boss_record_compiler:make_generated_forms:225 Module "fs_event" Parameters ['Id','EventName','Subclass','Uuid','CreationTime','Data'] Attributes[{compile,export_all}]
+2014-11-15 08:48:08.523 [info] <0.94.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  weibao_wiki_view_lib_tags
+2014-11-15 08:48:08.654 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/priv/init/weibao_wiki_01_news.erl" with options [{include_dirs,["/usr/local/src/weibao_wiki/include"]}] 
+2014-11-15 08:48:08.665 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "./deps/cb_admin/priv/init/cb_admin_01_news.erl" with options [{include_dirs,["/usr/local/src/weibao_wiki/include"]}] 
+2014-11-15 09:36:35.466 [info] <0.7.0> Application lager started on node fs_eventcool@localhost
+2014-11-15 09:36:35.475 [info] <0.7.0> Application crypto started on node fs_eventcool@localhost
+2014-11-15 09:36:35.492 [info] <0.7.0> Application mimetypes started on node fs_eventcool@localhost
+2014-11-15 09:36:35.543 [info] <0.94.0> Starting Boss in development mode....
+
+2014-11-15 09:36:35.555 [info] <0.94.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_database,"weibao_wiki"},{db_password,"epimap.123456"},{db_username,"epimap"},{db_host,"115.28.64.72"},{db_port,3306}]
+2014-11-15 09:36:35.626 [info] <0.94.0> Starting master services on fs_eventcool@localhost
+
+2014-11-15 09:36:35.648 [info] <0.7.0> Application tinymq started on node fs_eventcool@localhost
+2014-11-15 09:36:35.679 [notice] <0.62.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2014-11-15 09:36:35.709 [info] <0.94.0> SSL:[]
+
+2014-11-15 09:36:35.715 [info] <0.94.0> Starting cowboy... on fs_eventcool@localhost
+
+2014-11-15 09:36:35.722 [info] <0.7.0> Application cowlib started on node fs_eventcool@localhost
+2014-11-15 09:36:35.727 [info] <0.7.0> Application ranch started on node fs_eventcool@localhost
+2014-11-15 09:36:35.745 [info] <0.7.0> Application cowboy started on node fs_eventcool@localhost
+2014-11-15 09:36:35.745 [info] <0.94.0> Starting http listener... on 0.0.0.0:8001 
+
+2014-11-15 09:36:35.849 [info] <0.94.0>@boss_load:load_all_modules:57 Loading application weibao_wiki
+2014-11-15 09:36:35.854 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/lib/freeswitch.erl" with options [{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 09:36:35.916 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/lib/freeswitch_events.erl" with options [{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 09:36:35.950 [info] <0.94.0>@boss_controller_compiler:compile:59 Compile controller /usr/local/src/weibao_wiki/src/controller/weibao_wiki_hellos_controller.erl
+2014-11-15 09:36:35.950 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/controller/weibao_wiki_hellos_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 09:36:35.986 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 09:36:35.987 [info] <0.94.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{atom,{4,1},validation_tests},{'(',{4,17}},{')',{4,18}},{'->',{4,20}},{'[',{5,5}},{'{',{5,6}},{fun,{5,7}},{'(',{5,10}},{')',{5,11}},{'->',{5,13}},{atom,{5,16},length},{'(',{5,22}},{var,{5,23},'GreetingText'},{')',{5,35}},{'>=',{5,37}},{integer,{5,40},4},{end,{5,42}},{',',{5,45}},{string,{6,13},"Greeting must be at least 4 characters long!"},{'}',{7,9}},{']',{7,10}},{dot,{7,11}},{eof,{9,1}}]
+2014-11-15 09:36:35.987 [notice] <0.94.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2014-11-15 09:36:36.023 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/src/model/fs_event.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/usr/local/src/weibao_wiki/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-11-15 09:36:36.024 [info] <0.94.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},fs_event},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'EventName'},{',',{1,33}},{var,{1,35},'Subclass'},{',',{1,43}},{var,{1,45},'Uuid'},{',',{1,49}},{var,{1,51},'CreationTime'},{',',{1,63}},{var,{1,65},'Data'},{']',{1,69}},{')',{1,70}},{dot,{1,71}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{4,1}}]
+2014-11-15 09:36:36.024 [notice] <0.94.0>@boss_record_compiler:make_generated_forms:225 Module "fs_event" Parameters ['Id','EventName','Subclass','Uuid','CreationTime','Data'] Attributes[{compile,export_all}]
+2014-11-15 09:36:36.049 [info] <0.94.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  weibao_wiki_view_lib_tags
+2014-11-15 09:36:36.184 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/usr/local/src/weibao_wiki/priv/init/weibao_wiki_01_news.erl" with options [{include_dirs,["/usr/local/src/weibao_wiki/include"]}] 
+2014-11-15 09:36:36.191 [warning] <0.6.0> lager_error_logger_h dropped 51 messages in the last second that exceeded the limit of 50 messages/sec
+2014-11-15 09:36:36.191 [info] <0.7.0> Application cb_admin started on node fs_eventcool@localhost
+2014-11-15 09:36:36.191 [info] <0.281.0> Loading routes from "./deps/cb_admin/priv/cb_admin.routes" ....
+2014-11-15 09:36:36.192 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "./deps/cb_admin/priv/init/cb_admin_01_news.erl" with options [{include_dirs,["/usr/local/src/weibao_wiki/include"]}] 

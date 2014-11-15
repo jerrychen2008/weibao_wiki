@@ -34,7 +34,8 @@
 handle_event(Event) -> gen_server:cast(?MODULE, {handle_event, Event}).
 
 start() ->
-	io:format("you catch me in start...~n"),
+  io:format("you catch me in start...~n"),
+  init([]),
   gen_server:start_link({local, ?SERVER}, ?MODULE, [], []).
 
 %%--------------------------------------------------------------------
